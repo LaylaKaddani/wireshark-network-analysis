@@ -43,8 +43,6 @@ The Address Resolution Protocol (ARP) enables devices on the same local network 
 
 The network configuration was first identified using the `ipconfig /all` command.
 
-![Network Configuration](screenshots/ipconfig-all.png)
-
 After starting the packet capture, the `arp` display filter was applied to isolate ARP traffic.
 
 ![ARP Filter](screenshots/arp-filter.png)
