@@ -40,8 +40,6 @@ The analysis began by identifying the active network interface and collecting th
 
 This information provided the IPv4 address, MAC address, and gateway required to understand subsequent packet exchanges.
 
-![Network Configuration](ipconfig-all.png)
-
 ---
 
 ## Capturing ARP Traffic
