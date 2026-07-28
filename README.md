@@ -40,7 +40,7 @@ The analysis began by identifying the active network interface and collecting th
 
 This information provided the IPv4 address, MAC address, and gateway required to understand subsequent packet exchanges.
 
-![Network Configuration](screenshots/ipconfig-all.png)
+![Network Configuration](ipconfig-all.png)
 
 ---
 
@@ -48,11 +48,11 @@ This information provided the IPv4 address, MAC address, and gateway required to
 
 Wireshark was configured to capture network traffic while the `arp` display filter was applied to isolate Address Resolution Protocol packets.
 
-![ARP Filter](screenshots/arp-filter.png)
+![ARP Filter](arp-filter.png)
 
 To generate ARP traffic, a `ping` request was sent to another device on the local network.
 
-![Ping Command](screenshots/ping-gateway.png)
+![Ping Command](ping-gateway.png)
 
 ---
 
@@ -60,15 +60,15 @@ To generate ARP traffic, a `ping` request was sent to another device on the loca
 
 The capture shows an **ARP Request** broadcast across the local network to determine which device owns a specific IPv4 address.
 
-![ARP Request](screenshots/arp-request.png)
+![ARP Request](arp-request.png)
 
 Once the destination host receives the request, it responds with an **ARP Reply** containing its MAC address. This allows both devices to communicate at the data-link layer.
 
-![ARP Reply](screenshots/arp-reply.png)
+![ARP Reply](arp-reply.png)
 
 After the exchange, the operating system stores the IP-to-MAC mapping in its ARP cache, reducing the need for additional ARP requests during future communications.
 
-![ARP Cache](screenshots/arp-cache.png)
+![ARP Cache](arp-cache.png)
 
 ### Key Observations
 
@@ -89,7 +89,7 @@ A first capture was performed between devices connected to the same local networ
 
 The traffic contains **ICMP Echo Request** and **Echo Reply** packets exchanged directly between the communicating hosts.
 
-![Local ICMP Communication](screenshots/icmp-local.png)
+![Local ICMP Communication](icmp-local.png)
 
 ---
 
@@ -99,7 +99,7 @@ A second capture targeted a remote host using its domain name.
 
 Unlike local communications, packets are first forwarded to the default gateway before being routed across external networks.
 
-![Remote ICMP Communication](screenshots/icmp-remote-google.png)
+![Remote ICMP Communication](icmp-remote-google.png)
 
 ### Key Observations
 
