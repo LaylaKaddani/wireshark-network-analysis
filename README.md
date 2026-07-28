@@ -109,11 +109,11 @@ Unlike local communications, packets are first forwarded to the default gateway 
 
 # DNS Analysis
 
-Although no DNS traffic was specifically captured in this project, remote communications using commands such as `ping google.com` rely on the **Domain Name System (DNS)**.
+Remote connectivity using domain names, such as ping google.com, depends on the Domain Name System (DNS).
 
-Before ICMP packets can be transmitted, the operating system resolves the domain name into its corresponding IPv4 address. This process allows users to communicate using human-readable domain names instead of numerical IP addresses.
+Before ICMP packets are transmitted, the operating system resolves the domain name into its corresponding IPv4 address. This name resolution process enables users to communicate with remote hosts using human-readable domain names instead of numerical IP addresses.
 
-Understanding this mechanism is essential when analyzing network traffic, troubleshooting connectivity issues, or investigating suspicious communications.
+Understanding the role of DNS is essential when analyzing network traffic, troubleshooting connectivity issues, and investigating network communications in cybersecurity.
 
 ---
 
