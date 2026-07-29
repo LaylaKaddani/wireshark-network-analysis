@@ -66,6 +66,7 @@ Once the destination host receives the request, it responds with an **ARP Reply*
 
 After the exchange, the operating system stores the IP-to-MAC mapping in its ARP cache, reducing the need for additional ARP requests during future communications.
 
+
 ![ARP Cache](arp-cache.png)
 
 ### Key Observations
